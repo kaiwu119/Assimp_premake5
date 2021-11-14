@@ -1,24 +1,28 @@
- following https://gist.github.com/Cannedfood/a71652022f066c8032f5a1c01919c55d
+ refer to https://gist.github.com/Cannedfood/a71652022f066c8032f5a1c01919c55d
  make latest assimp version works, 2021.11.14
 
  Assimp project Directory Structure (make sure the Directory Structure is correct)
-		xx/Assimp
+        xx/Assimp
           _config_headers/
             assimp/
               config.h
               revision.h
-          assimp.lua
+          premake5.lua
           assimp
 
  Use assimp in your project 
-    1.Add includedirs
+    1. include Assimp project in your project xx.lua
+        include "xx/Assimp"
+
+    2. Add includedirs
 		includedirs
 		{
 			"yourPath/Assimp/assimp/include",
 			"yourPath/Assimp/_config_headers/",
 			"yourPath/Assimp/_config_headers/assimp"
 		}
-	 2. Let assimp link to your project
+        
+    3. Let assimp link to your project
  		links
 		{
 			"assimp"

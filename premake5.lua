@@ -1,27 +1,3 @@
--- following https://gist.github.com/Cannedfood/a71652022f066c8032f5a1c01919c55d
--- make latest assimp version work,
--- @ Directory Structure
---		xx/Assimp
---          _config_headers/
---            assimp/
---              config.h
---              revision.h
---          assimp.lua
---          assimp
-
--- @ use assimp in your project 
---    1.Add includedirs
---		includedirs
---		{
---			"yourPath/Assimp/assimp/include",
---			"yourPath/Assimp/_config_headers/",
---			"yourPath/Assimp/_config_headers/assimp"
---		}
---	 2. Let assimp link to your project
--- 		links
---		{
---			"assimp"
---		}
 project 'assimp'
     kind "StaticLib"
     language "C++"
