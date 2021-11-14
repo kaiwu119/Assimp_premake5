@@ -2,7 +2,7 @@
  make latest assimp version works, 2021.11.14
 
  Assimp project Directory Structure (make sure the Directory Structure is correct)
-		xx/Assimp
+	xx/Assimp
           _config_headers/
             assimp/
               config.h
@@ -18,7 +18,7 @@
 			"yourPath/Assimp/_config_headers/",
 			"yourPath/Assimp/_config_headers/assimp"
 		}
-	 2. Let assimp link to your project
+    2. Let assimp link to your project
  		links
 		{
 			"assimp"
